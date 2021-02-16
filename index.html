@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal Cheatsheet</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style></style>
+</head>
+
+<body>
+    <header>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#setup">Setup</a></li>
+                <li><a href="#stage-snapshot">Stage & Snapshot</a></li>
+                <li><a href="#branch-merge">Branch & Merge</a></li>
+                <li><a href="#inspect-track">Inspect & Track</a></li>
+                <li><a href="#share-update">Share & Update</a></li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <img src="assets/img/0_VcMPr1unIjAIHw2j.jpg" alt="Git Meme" />
+            <div class="right">
+                <h1>Git Cheat Sheet</h1>
+                <p>
+                    Use this handy git cheat sheet guide to enhance your workflow. This
+                    Git cheat sheet saves you time when you just can't remember what a
+                    command is or don't want to use git help in the command line. It is
+                    hard to memorize all the important Git commands by heart, so print
+                    this out or save it to your desktop to resort to when you get stuck.
+                    We’ve included the basic Git commands to help you learn Git, and
+                    more advanced concepts around Git branches, remote repositories,
+                    undoing changes, and more.
+                </p>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="installation" class="sticky-things">
+            <div class="sticky">
+                <h2>Installation</h2>
+                <p>
+                    With platform specific installers for Git, GitHub also provides the
+                    ease of staying up-to-date with the latest releases of the command
+                    line tool while providing a graphical user interface for day-to-day
+                    interaction, review, and repository synchronization.
+                </p>
+            </div>
+            <div class="right">
+                <div class="command">
+                    <h3>GitHub for Windows</h3>
+                    <a href="https://windows.github.com">https://windows.github.com</a>
+                </div>
+                <div class="command">
+                    <h3>GitHub for Mac</h3>
+                    <a href="https://mac.github.com">https://mac.github.com</a>
+                </div>
+                <div class="command">
+                    <p>
+                        For Linux and Solaris platforms, the latest release is available
+                        on the official Git web site.
+                    </p>
+                </div>
+                <div class="command">
+                    <h3>Git for All Platforms</h3>
+                    <a href="http://git-scm.com">http://git-scm.com</a>
+                </div>
+            </div>
+        </section>
+        <section class="bridge"></section>
+        <section id="setup" class="sticky-things">
+            <div class="sticky">
+                <h2>Setup</h2>
+                <p>Configuring user information used across all local repositories</p>
+            </div>
+            <div class="right">
+                <div class="command">
+                    <h3>git config --global user.name “[firstname lastname]”</h3>
+                    <p>
+                        set a name that is identifiable for credit when review version
+                        history
+                    </p>
+                </div>
+                <div class="command">
+                    <h3>git config --global user.email “[valid-email]”</h3>
+                    <p>
+                        set an email address that will be associated with each history
+                        marker
+                    </p>
+                </div>
+                <div class="command">
+                    <h3>git config --global color.ui auto</h3>
+                    <p>
+                        set automatic command line coloring for Git for easy reviewing
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="bridge"></section>
+        <section id="stage-snapshot" class="sticky-things">
+            <div class="sticky">
+                <h2>STAGE & SNAPSHOT</h2>
+                <p>Working with snapshots and the Git staging area</p>
+            </div>
+            <div class="right">
+                <div class="command">
+                    <h3>git status</h3>
+                    <p>
+                        show modified files in working directory, staged for your next
+                        commit
+                    </p>
+                </div>
+                <div class="command">
+                    <h3>git add [file]</h3>
+                    <p>add a file as it looks now to your next commit (stage)</p>
+                </div>
+                <div class="command">
+                    <h3>git reset [file]</h3>
+                    <p>
+                        unstage a file while retaining the changes in working directory
+                    </p>
+                </div>
+                <div class="command">
+                    <h3>git diff</h3>
+                    <p>diff of what is changed but not staged</p>
+                </div>
+                <div class="command">
+                    <h3>git diff --staged</h3>
+                    <p>diff of what is staged but not yet commited</p>
+                </div>
+                <div class="command">
+                    <h3>git commit -m “[descriptive message]”</h3>
+                    <p>commit your staged content as a new commit snapshot</p>
+                </div>
+            </div>
+        </section>
+        <section class="bridge"></section>
+        <section id="branch-merge" class="sticky-things">
+            <div class="sticky">
+                <h2>Branch & Merge</h2>
+                <p>
+                    Isolating work in branches, changing context, and integrating
+                    changes
+                </p>
+            </div>
+            <div class="right">
+                <div class="command">
+                    <h3>git branch</h3>
+                    <p>
+                        list your branches. a * will appear next to the currently active
+                        branch
+                    </p>
+                </div>
+                <div class="command">
+                    <h3>git branch [branch-name]</h3>
+                    <p>create a new branch at the current commit</p>
+                </div>
+                <div class="command">
+                    <h3>git checkout</h3>
+                    <p>
+                        switch to another branch and check it out into your working
+                        directory
+                    </p>
+                </div>
+                <div class="command">
+                    <h3>git merge [branch]</h3>
+                    <p>merge the specified branch’s history into the current one</p>
+                </div>
+                <div class="command">
+                    <h3>git log test</h3>
+                    <p>show all commits in the current branch’s history</p>
+                </div>
+            </div>
+        </section>
+        <section class="bridge"></section>
+        <section id="inspect-track" class="sticky-things">
+            <div class="sticky">
+                <h2>Inspect & Track</h2>
+                <p>
+                    Examining logs, diffs and object information // Versioning file
+                    removes and path changes
+                </p>
+            </div>
+            <div class="right">
+                <div class="command">
+                    <h3>git log</h3>
+                    <p>show the commit history for the currently active branch</p>
+                </div>
+                <div class="command">
+                    <h3>git log branchB..branchA</h3>
+                    <p>show the commits on branchA that are not on branchB</p>
+                </div>
+                <div class="command">
+                    <h3>git log --follow [file]</h3>
+                    <p>show the commits that changed file, even across renames</p>
+                </div>
+                <div class="command">
+                    <h3>git diff branchB...branchA</h3>
+                    <p>show the diff of what is in branchA that is not in branchB</p>
+                </div>
+                <div class="command">
+                    <h3>git show [SHA]</h3>
+                    <p>show any object in Git in human-readable format</p>
+                </div>
+                <div class="command">
+                    <h3>git rm [file]</h3>
+                    <p>delete the file from project and stage the removal for commit</p>
+                </div>
+                <div class="command">
+                    <h3>git mv [existing-path] [new-path]</h3>
+                    <p>change an existing file path and stage the move</p>
+                </div>
+                <div class="command">
+                    <h3>git log --stat -M</h3>
+                    <p>show all commit logs with indication of any paths that moved</p>
+                </div>
+            </div>
+        </section>
+        <section class="bridge"></section>
+        <section id="share-update" class="sticky-things">
+            <div class="sticky">
+                <h2>Share & Update</h2>
+                <p>
+                    Retrieving updates from another repository and updating local repos
+                </p>
+            </div>
+            <div class="right">
+                <div class="command">
+                    <h3>git remote add [alias] [url]</h3>
+                    <p>add a git URL as an alias</p>
+                </div>
+                <div class="command">
+                    <h3>git fetch [alias]</h3>
+                    <p>fetch down all the branches from that Git remote</p>
+                </div>
+                <div class="command">
+                    <h3>git merge [alias]/[branch]</h3>
+                    <p>
+                        merge a remote branch into your current branch to bring it up to
+                        date
+                    </p>
+                </div>
+                <div class="command">
+                    <h3>git push [alias] [branch]</h3>
+                    <p>Transmit local branch commits to the remote repository branch</p>
+                </div>
+                <div class="command">
+                    <h3>git pull</h3>
+                    <p>fetch and merge any commits from the tracking remote branch</p>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <button id="myBtn">Need help?</button>
+            <a id="print-it" href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blanket">Print
+                it</a>
+        </aside>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>You need help? – Just ask Adriaan</h2>
+                <p>He knows how to google! We barely knew what we did here..</p>
+                <p class="contact" contenteditable="true">Your Email</p>
+                <p class="contact" contenteditable="true">
+                    Adriaan I need heeeelp!!!1!!
+                </p>
+                <button>Submit</button>
+                <img src="assets/img/banner 1.png" alt="Emoji von Adriaan" />
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
